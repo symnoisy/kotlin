@@ -40,3 +40,16 @@ fun getStringLength2(obj: Any): Int?{
     }
 }
 
+
+"""
+When 사용법 .. 오 신기 
+""".trimIndent()
+fun check_case(obj: Any): String {
+    when (obj) {
+        1 -> return "One"
+        "Hello" -> return "Greeting"
+        is Long -> return "Long"
+        !is String -> return "Not a String"
+        else -> return "Unknown"
+    }
+}
